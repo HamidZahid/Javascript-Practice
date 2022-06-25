@@ -10,18 +10,35 @@
 
     <title>Hello, world!</title>
     <script type="text/javascript">
-      function convert(){
-        let kms = document.getElementById('data').value;
-        const factor = 0.621371;
-        let miles = kms * factor;
-        // document.getElementById('res').innerText = ` ${miles} miles`;
-        document.getElementById('res').innerText =  miles + ' Miles';
+      // function convert(){
+      //   let kms = document.getElementById('data').value;
+      //   const factor = 0.621371;
+      //   let miles = kms * factor;
+      //   document.getElementById('res').innerText = ` ${miles} miles`;
+      //   document.getElementById('res').innerText =  miles + ' Miles';
+      // }
+      function check(){
+        var c = document.getElementById('data').value;
+        // var res = Math.sign(c);
+        if ( c > 0) {
+          var ress = `${c} is Positive number`
+        } else if (c < 0 ){
+          var ress = `${c} is negative number`
+        }else if ( c == 0) {
+         var ress = `${c} is Zero`
+        }else {
+         var ress = `${c} is not a  number`
+        }
+        document.getElementById('res').innerText = ress;
       }
     </script>
   </head>
   <body>
-    <input type="number" name="" step="any" id="data"> kms
+    <!-- <input type="number" name="" step="any" id="data" /> kms
     <button onclick="convert()">Convert</button> miles
+    <h1 id="res"></h1> -->
+    <input type="" name="" step="any" id="data" />
+    <button onclick="check()">Check</button> 
     <h1 id="res"></h1>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
    <script type="text/javascript">
@@ -47,7 +64,7 @@
     //  a = b;
     //  b = temp;
 
-    // document.write(a );
+    // document.write(a);
     // document.write(b);
    </script>
   </body>
