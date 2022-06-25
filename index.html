@@ -17,20 +17,26 @@
       //   document.getElementById('res').innerText = ` ${miles} miles`;
       //   document.getElementById('res').innerText =  miles + ' Miles';
       // }
-      function check(){
-        var c = document.getElementById('data').value;
-        // var res = Math.sign(c);
-        if ( c > 0) {
-          var ress = `${c} is Positive number`
-        } else if (c < 0 ){
-          var ress = `${c} is negative number`
-        }else if ( c == 0) {
-         var ress = `${c} is Zero`
-        }else {
-         var ress = `${c} is not a  number`
-        }
-        document.getElementById('res').innerText = ress;
-      }
+      // function check(){
+      //   var c = document.getElementById('data').value;
+      //   // var res = Math.sign(c);
+      //   if ( c > 0) {
+      //     var ress = `${c} is Positive number`
+      //   } else if (c < 0 ){
+      //     var ress = `${c} is negative number`
+      //   }else if ( c == 0) {
+      //    var ress = `${c} is Zero`
+      //   }else {
+      //    var ress = `${c} is not a  number`
+      //   }
+      //   document.getElementById('res').innerText = ress;
+      // }
+      var x = Math.random();
+      console.log("Before Calculation" + x);
+      // x = x * (1000 - 1) + 1 ;
+      x = x * 10000 ;
+      console.log("after Calculation" + x);
+      console.log("floor Calculation" + Math.floor(x));
     </script>
   </head>
   <body>
