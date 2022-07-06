@@ -14,12 +14,12 @@
 
 // simple Function ES5
 function Greet(name, age,value ,time ,money){
-    return "Hey Baby " + name  + " " + age + " " + value + " " + time + " " +money;
+    return  `Hey Baby ${name} ${age} ${value} ${time} ${money} baby i am pro`;
 };
 console.log(Greet("Hamid Eventuilly", "Second Value" ,'78',"helloo","World"))
 // Arrow Function ES6
 var greet = (name , age,value ,time ,money) =>{
-    return "Hello " + name + " " + age + " " + value + " " + time + " " +money;
+    return `Hello ${name} ${age} ${value} ${time} ${money} baby i am pro`;
 };
 
 console.log(greet("Hamid Eventuilly", "Second Value" ,'78',"helloo","World"))
@@ -42,3 +42,5 @@ Person.test()
 
 // Template Literals 
 
+let hamid = "Hamid Software company"
+console.log(`Good To see you Sir ${hamid}! you are fireddd` );
