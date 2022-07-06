@@ -44,3 +44,22 @@ Person.test()
 
 let hamid = "Hamid Software company"
 console.log(`Good To see you Sir ${hamid}! you are fireddd` );
+
+
+var details ={
+    name:"hamid",
+    age: 56,
+    edu: "adp"
+}
+var {name , age , edu} = details;
+console.log(name);
+console.log(age);
+console.log(edu);
+
+let arr = ["A", "V","f","Hamid"]
+
+// let vi = arr[2];
+// console.log(vi)
+
+let [v1,v2,v3,v4] = arr;
+console.log(v4)
