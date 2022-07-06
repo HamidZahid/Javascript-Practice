@@ -83,3 +83,22 @@ myPromise.then((m)=>{
 }).catch((err)=>{
     console.log(err);
 })
+
+
+
+// rest and spread operators
+
+const ji =[0,1,2,3,4,5];
+const jo = ["a","c","d",...ji,6,7,8,9,10];
+console.log(jo)
+
+
+const sum = (...numbers)=>{
+    let total = 0;
+    numbers.forEach((n)=>{
+        total += n;
+    });
+    console.log(total);
+};
+
+sum(4,2,5,5,7,6,7,6,6,6,6,6,6,6,6)
