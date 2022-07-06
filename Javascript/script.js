@@ -23,3 +23,19 @@ var greet = (name , age,value ,time ,money) =>{
 };
 
 console.log(greet("Hamid Eventuilly", "Second Value" ,'78',"helloo","World"))
+
+let Sqr = (num) =>{
+ return num*num;
+};
+console.log(Sqr(10))
+
+// This Keyword Use 
+
+const Person = {
+    test(){
+        setTimeout(() => {
+            console.log(this)
+        }, 3000);
+    }
+}
+Person.test()
