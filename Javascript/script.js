@@ -102,3 +102,18 @@ const sum = (...numbers)=>{
 };
 
 sum(4,2,5,5,7,6,7,6,6,6,6,6,6,6,6)
+
+// Classes
+
+class Hamid{
+    constructor(uname , uage){
+        this.name= uname;
+        this.age = uage ;
+    }
+    details(){
+        console.log(`The age of ${this.name} is ${this.age}`);
+    }
+}
+
+const h = new Hamid("Hamid" , 21);
+h.details();
