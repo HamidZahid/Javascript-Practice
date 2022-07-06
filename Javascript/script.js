@@ -63,3 +63,23 @@ let arr = ["A", "V","f","Hamid"]
 
 let [v1,v2,v3,v4] = arr;
 console.log(v4)
+
+// Promises
+
+const myPromise  =  new Promise((Resolved , Rejected)=>{
+    const a = 0;
+    const b = 4
+    const c = a + b;
+
+    if ( c === 4) {
+        Resolved("Yes it is true")
+    }else{
+        Rejected ("Bsdk Tu Pagal Hai ?")
+    }
+});
+
+myPromise.then((m)=>{
+    console.log(m);
+}).catch((err)=>{
+    console.log(err);
+})
